@@ -1,0 +1,4 @@
+[submodule "my_libc"]
+	path = my_libc
+	url = https://github.com/WellsGuillaume/my_libc.git
+	branch = master
