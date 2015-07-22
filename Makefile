@@ -33,6 +33,9 @@ CFLAGS	= -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJ) 	
+	git submodule init my_libc
+	git submodule update --remote my_libc
+	cp my_libc/libft.a .
 	$(CC) $(OBJ) $(CFLAGS) -L. -lft -o ft_ls
 
 clean:
